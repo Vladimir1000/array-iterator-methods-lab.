@@ -16,12 +16,18 @@ const inventors = [
   //1.-------------------------------------------------------------------------
   const inventorBornIn1500s = inventors.filter(function (inventor) {
     if (inventor.year >= 1500 && inventor.year < 1600) {
-      return inventor;
+    return inventor;
     }
   });
   console.log(inventorBornIn1500s);
-  //-------------------------------------------------------------------------------
-  
+
+  //2.-------------------------------------------------------------------------------
+
+  const inventorsFirstLastName = inventors.map(function (inventor){
+    return `${inventor.first} ${inventor.last}`;
+  }); 
+  console.log(inventorsFirstLastName);
+
   const people = [
     'Becker, Carl', 'Beckett, Samuel', 'Beddoes, Mick', 'Beecher, Henry',
     'Beethoven, Ludwig', 'Begin, Menachem', 'Belloc, Hilaire', 'Bellow, Saul',
