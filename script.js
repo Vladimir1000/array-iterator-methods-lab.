@@ -31,14 +31,14 @@ const inventors = [
   });
   console.log(inventorNames);
 
-  //3-------------------------------------------------------------------------------
+  //3.-------------------------------------------------------------------------------
   
   const sortedByBirthYear = inventors.sort(function (year1, year2){
     return year1.year - year2.year;
   });
   console.log(sortedByBirthYear);
 
-  //4----------------------------------------------------------------------------------
+  //4.----------------------------------------------------------------------------------
 
   const inventorNameAda = inventors.find(function(inventor){
     if (inventor.first == 'Ada'){
@@ -63,7 +63,7 @@ const inventors = [
     'Blake, William'
   ];
   
-  //5---------------------------------------------------------------------------------
+  //5.---------------------------------------------------------------------------------
 
   let firstLast = people.map(function(name){
     let splitName = name.split(', ');
@@ -80,11 +80,21 @@ const inventors = [
     { name: 'Wes', year: 2015 }
   ];
 
-  //6---------------------------------------------------------------------------------
+  //6.---------------------------------------------------------------------------------
+
   let isAdultPresent = devs.some(function(person){
     return person.year <= 2006;
   });
   console.log(isAdultPresent);
+
+  //7.-----------------------------------------------------------------------------------
+
+  let isEveryone19OrOlder = devs.every(function(person){
+    return devs.year <= 2005;
+  });
+  console.log(isEveryone19OrOlder);
+
+  //----------------------------------------------------------------------------------
 
   const travelMethods = [
     'car', 'car', 'truck', 'truck', 'bike', 'walk', 'car', 'van',
