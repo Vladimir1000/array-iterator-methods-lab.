@@ -23,10 +23,14 @@ const inventors = [
 
   //2.-------------------------------------------------------------------------------
 
-  const inventorsFirstLastName = inventors.map(function (inventor){
-    return `${inventor.first} ${inventor.last}`;
-  }); 
-  console.log(inventorsFirstLastName);
+  const inventorNames = inventors.map(function (inventor) {
+    return {
+        first: inventor.first,
+        last: inventor.last
+    };
+  });
+  console.log(inventorNames);
+  
 
   const people = [
     'Becker, Carl', 'Beckett, Samuel', 'Beddoes, Mick', 'Beecher, Henry',
