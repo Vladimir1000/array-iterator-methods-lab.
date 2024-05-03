@@ -38,6 +38,15 @@ const inventors = [
   });
   console.log(sortedByBirthYear);
 
+  //4----------------------------------------------------------------------------------
+
+  const inventorNameAda = inventors.find(function(inventor){
+    if (inventor.first == 'Ada'){
+        return inventor
+    }
+  });
+  console.log(inventorNameAda);
+
   const people = [
     'Becker, Carl', 'Beckett, Samuel', 'Beddoes, Mick', 'Beecher, Henry',
     'Beethoven, Ludwig', 'Begin, Menachem', 'Belloc, Hilaire', 'Bellow, Saul',
