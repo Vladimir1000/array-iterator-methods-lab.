@@ -47,6 +47,8 @@ const inventors = [
   });
   console.log(inventorNameAda);
 
+  //-----------------------------------------------------------------------------------
+
   const people = [
     'Becker, Carl', 'Beckett, Samuel', 'Beddoes, Mick', 'Beecher, Henry',
     'Beethoven, Ludwig', 'Begin, Menachem', 'Belloc, Hilaire', 'Bellow, Saul',
@@ -61,6 +63,14 @@ const inventors = [
     'Blake, William'
   ];
   
+  //5---------------------------------------------------------------------------------
+  let firstLast = people.map(function(name){
+    let splitName = name.split(', ');
+    return splitName[1] + ' ' + splitName[0];
+  });
+  console.log(firstLast);
+
+
   const travelMethods = [
     'car', 'car', 'truck', 'truck', 'bike', 'walk', 'car', 'van',
     'bike', 'walk', 'car', 'van', 'car', 'truck'
