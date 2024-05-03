@@ -106,14 +106,23 @@ const inventors = [
 
   //8.--------------------------------------------------------------------------------
 
-  let commentById = comments.find(function(comentId){
-    if (comentId.id === 823423 ){
-        return comentId;
+  let commentById = comments.find(function(commentId){
+    if (commentId.id === 823423 ){
+        return commentId;
     }
   });
   console.log(commentById);
 
-  //----------------------------------------------------------------------------------
+  //9.----------------------------------------------------------------------------------
+
+  let idx = comments.findIndex(function(index){
+    return index.id === 123523;
+  });
+  console.log(idx);
+
+  //------------------------------------------------------------------------------------
+
+
 
   const travelMethods = [
     'car', 'car', 'truck', 'truck', 'bike', 'walk', 'car', 'van',
