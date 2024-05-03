@@ -30,7 +30,13 @@ const inventors = [
     };
   });
   console.log(inventorNames);
+
+  //3-------------------------------------------------------------------------------
   
+  const sortedByBirthYear = inventors.sort(function (year1, year2){
+    return year1.year - year2.year;
+  });
+  console.log(sortedByBirthYear);
 
   const people = [
     'Becker, Carl', 'Beckett, Samuel', 'Beddoes, Mick', 'Beecher, Henry',
