@@ -64,24 +64,34 @@ const inventors = [
   ];
   
   //5---------------------------------------------------------------------------------
+
   let firstLast = people.map(function(name){
     let splitName = name.split(', ');
     return splitName[1] + ' ' + splitName[0];
   });
   console.log(firstLast);
 
+  //---------------------------------------------------------------------------------
 
-  const travelMethods = [
-    'car', 'car', 'truck', 'truck', 'bike', 'walk', 'car', 'van',
-    'bike', 'walk', 'car', 'van', 'car', 'truck'
-  ];
-  
   const devs = [
     { name: 'Alex', year: 1988 },
     { name: 'Dani', year: 1986 },
     { name: 'Matt', year: 1970 },
     { name: 'Wes', year: 2015 }
   ];
+
+  //6---------------------------------------------------------------------------------
+  let isAdultPresent = devs.some(function(person){
+    return person.year <= 2006;
+  });
+  console.log(isAdultPresent);
+
+  const travelMethods = [
+    'car', 'car', 'truck', 'truck', 'bike', 'walk', 'car', 'van',
+    'bike', 'walk', 'car', 'van', 'car', 'truck'
+  ];
+  
+ 
 
   const comments = [
     { text: 'Love this!', id: 523423 },
